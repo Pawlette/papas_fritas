@@ -41,6 +41,17 @@ PSEUDOCODE SOLUTION 2
 2.1 If (CURRENT > MAX) then MAX = CURRENT IDX = Index of CURRENT
 3. Return IDX
 
+PSEUDOCODE SOLUTION 3
+1. CREATE MAP WITH INPUT (solution works assuming all heights are different)
+1.1 STORE VALUES IN LIST
+2. SORT VALUES IN LIST
+3, RETURN VALUE FROM MAP USING LAST VALUE IN ORDERED LIST AS KEY
+
+    ALTERNATIVE IF SOME HEIGHTS REPEAT
+    A) Create a list of indexes per height in map, height is the key.
+    B) When the list is retrieved, delete element from list, if list is empty, delete key from MAP
+        B.a) We could assume that altitude of the starship decreases as we destroy the mountains (thinking more in a game approach)
+
 ANALYSIS
 * JS implementation
 - Receive input, array of 'n' size -> O(1). NOTE: if we are looping to get input O(n)
@@ -48,3 +59,11 @@ ANALYSIS
 - Console log -> O(1)
 Time Complexity O(n)
 Time Complexity if we are looping to get heights O(2n) -> O(n)
+
+* PYTHON implementation
+- Receive input, looping to get values and create map -> O(n)
+- fire() function
+    ~ sort mountains -> O(n log n)
+- return value from map -> O(1)
+Time Complexity O(2n log n) -> O(n log n) 
+
