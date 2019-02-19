@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include <algorithm>
+#include <chrono>
 
 using namespace std;
 
@@ -14,6 +15,8 @@ using namespace std;
  **/
 int main()
 {
+    std::chrono::high_resolution_clock::time_point t1 = std::chrono::high_resolution_clock::now();
+
     vector<int> mountainHeights;
     cout << "Provide eight heights for your mountains" << endl;
     for (int i = 0; i < 8; i++) {
@@ -30,7 +33,11 @@ int main()
             max = current;
             idx = i;
          }
-     }
-     cout << "Fire to mountain at index: " << idx << endl; // The index of the mountain to fire on.
-return 0;
+    }
+    cout << "Fire to mountain at index: " << idx << endl; // The index of the mountain to fire on.
+
+    std::chrono::high_resolution_clock::time_point t2 = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>( t2 - t1 ).count();
+    cout << "Execution time (microseconds):" << duration << endl;
+    return 0;
 }
