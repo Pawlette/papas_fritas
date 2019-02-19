@@ -41,3 +41,10 @@ PSEUDOCODE SOLUTION 2
 2.1 If (CURRENT > MAX) then MAX = CURRENT IDX = Index of CURRENT
 3. Return IDX
 
+ANALYSIS
+* JS implementation
+- Receive input, array of 'n' size -> O(1). NOTE: if we are looping to get input O(n)
+- Reduce function -> O(n)
+- Console log -> O(1)
+Time Complexity O(n)
+Time Complexity if we are looping to get heights O(2n) -> O(n)
