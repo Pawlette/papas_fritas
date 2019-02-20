@@ -1,5 +1,5 @@
 # Papas Fritas
-Papas fritas or french fries are my guilty pleasure and I can't stop eat them, same as I can't stop solving puzzles for fun, one after other and so on...
+Papas fritas or french fries are my guilty pleasure and I can't stop eat them, same as I can't stop solving puzzles for fun, one after another and so on...
 
 I will solve problems that I found in leetcode and codingame just for fun and to practice computer science concepts
 
