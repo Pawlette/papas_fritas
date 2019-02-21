@@ -28,7 +28,7 @@ Oputput: 807,991
 - i for index starting from 0 (zero)
 - TemporaryResult = 0
 
-1. Walk through the digits of the given number from Left to Right, starting from second position i=1
+1. Walk through the digits of the given number from Left to Right, starting from position zero i=0
 2. Is there any smaller digit than me in the following positions? (i+1 TO n-1)?
 
    2.a No, then move to step 3 (Move to next digit)
@@ -51,7 +51,7 @@ Be elegant and impress!!! ;)
 - TemporaryResult = 0
 
 1. Start from digit at last position in number i = (n-1)
-2. Find any digit in the previous positions (0 - (i-1)) bigger than current digit (PLEASE NOTE: NOT EQUALS)
+2. Find any digit in the previous positions (0 TO (i-1)) bigger than current digit (PLEASE NOTE: NOT EQUALS)
 
     2.a Did you find it?
     
